@@ -155,15 +155,13 @@ int main()
         node *root = NULL;
 
         // CREATING A TREE
-        //  root = buildTree(root);
+        root = buildTree(root);
         // 1 3 7 -1 -1 11 -1 -1 5 17 -1 -1 -1
 
-        buildFromLevelOrder(root);
+        // buildFromLevelOrder(root);
 
-        levelOrderTraversal(root);
-        // 1 3 5 7 11 17 -1 -1 -1 -1 -1 -1 -1
+                //  1 3 5 7 11 17 -1 -1 -1 -1 -1 -1 -1
 
-        /*
         // level order
         cout << "Printing the level order tracersal output " << endl;
         levelOrderTraversal(root);
@@ -176,8 +174,6 @@ int main()
         cout << endl
              << "postorder traversal is:  ";
         postorder(root);
-
-        */
 
         return 0;
 }

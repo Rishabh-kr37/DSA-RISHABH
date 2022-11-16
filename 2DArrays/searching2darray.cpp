@@ -56,3 +56,30 @@ int main()
 
         return 0;
 }
+
+/*
+Search in a matrix
+EasyAccuracy: 41.62%Submissions: 83430Points: 2Given a matrix mat[][] of size N x M, where every row and column is sorted in increasing order, and a number X is given.
+ The task is to find whether element X is present in the matrix or not.
+
+
+        int matSearch (vector <vector <int>> &mat, int N, int M, int X)
+        {
+            int n=N;
+        int m=M;
+        int s=0;
+        int e=m-1;
+        while(s<n and e>=0)
+        {
+            if(X==mat[s][e])
+            {
+                return 1;
+            }
+            else if(X<mat[s][e])
+                e--;
+            else
+                s++;
+        }
+        return 0;
+        }
+ */

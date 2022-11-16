@@ -19,6 +19,20 @@ int sorting(int arr[], int n)
         }
 }
 
+void print(int arr[], int size)
+{
+
+        for (int i = 0; i < size; i++)
+        {
+                cout << arr[i] << " ";
+        }
+        cout << endl;
+}
+
 int main()
 {
+
+        int boy[6] = {3, 4, 9, 7, 6, 2};
+        sorting(boy, 6);
+        print(boy, 6);
 }
